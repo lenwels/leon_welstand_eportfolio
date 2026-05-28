@@ -2,7 +2,7 @@
 
 This is a plain HTML/CSS portfolio template built for a workshop talk. No frameworks, no npm, no build step — just files you open in a browser.
 
-**Live demo:** `https://yash-sukhdeve.github.io/undergrad-eportfolio-tutorial/`
+**Live demo:** `https://avhbac.github.io/undergrad-eportfolio-tutorial/`
 
 ![QR code to live site](qr-code.png)
 
@@ -52,7 +52,7 @@ Quick version if you already know the basics:
 
 1. **Fork** this repo (button top-right on GitHub).
 2. Go to **Settings → Pages → Source → main branch / root** and hit save.
-3. Your site goes live at `https://<your-username>.github.io/undergrad-eportfolio-tutorial/` in about a minute.
+3. Your site goes live at `https://your-username.github.io/undergrad-eportfolio-tutorial/` in about a minute.
 4. Edit the files and replace the placeholder text.
 
 ---

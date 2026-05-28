@@ -79,7 +79,7 @@ Once you're in, you're on the GitHub dashboard. Leave this tab open.
 "Forking" means making your own copy of this project. It takes 10 seconds.
 
 1. Make sure you're logged into GitHub
-2. Go to: `https://github.com/Yash-Sukhdeve/undergrad-eportfolio-tutorial`
+2. Go to: `https://github.com/AVHBAC/undergrad-eportfolio-tutorial`
 3. In the top-right corner, click **Fork**
 4. On the next page, you can change the repository name if you want — or leave it as is
 5. Click **Create fork**
