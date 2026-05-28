@@ -86,11 +86,44 @@ Click that link — your portfolio is now on the internet.
 
 ---
 
-## Part 5 — Edit the Files to Make It Yours
+## Part 5 — Choose Your Design
+
+Before you start editing, decide which design you want. There are two options:
+
+**Option A — Keep the default design**
+The default has 5 separate pages: Home, Projects, Skills, Resume, and Contact. Skip to Part 6 and start editing.
+
+**Option B — Use one of the 6 themed designs**
+The themed designs have a different look. To pick one:
+
+1. In your repo, open the `templates/` folder
+2. Click on a template file to see what it looks like (e.g. `template-cs.html`)
+3. If you like it, click the **pencil icon** to edit it
+4. Click inside the text area, press **Ctrl+A** (Windows) or **Cmd+A** (Mac) to select all, then **Ctrl+C** to copy
+5. Go back to your repo's main folder and open `index.html`
+6. Click the **pencil icon**, press **Ctrl+A** to select all, then **Ctrl+V** to paste
+7. Click **Commit changes**
+
+Your home page now uses the themed design. All your content — projects, skills, experience, contact — lives inside this one file. You do not need to edit the other pages.
+
+The 6 themes and who they are for:
+
+| File | Best for |
+|------|----------|
+| `template-cs.html` | Computer Science / Software Engineering |
+| `template-design.html` | Design / UX / Creative Arts |
+| `template-data.html` | Data Science / Machine Learning |
+| `template-bio.html` | Biology / Life Sciences / Pre-Med |
+| `template-business.html` | Business / Finance / Consulting |
+| `template-arch.html` | Architecture / Civil / Urban Design |
+
+---
+
+## Part 6 — Edit the Files to Make It Yours
 
 Now you replace all the placeholder text with your real information.
 
-### The easiest way — edit directly on GitHub
+### How to edit a file on GitHub
 
 1. Go to your repo and click on `index.html`
 2. Click the **pencil icon** (top right of the file) to edit
@@ -98,9 +131,7 @@ Now you replace all the placeholder text with your real information.
 4. Scroll down, write a short note like *"Add my name"*, and click **Commit changes**
 5. Your live site updates in about 30–60 seconds
 
-Do this for each file: `index.html`, `projects.html`, `skills.html`, `resume.html`, `contact.html`.
-
-### What to change in each file
+### If you are using the default design, edit all 5 files
 
 **index.html** — your name, your university, your bio, your GitHub and LinkedIn links
 
@@ -112,9 +143,13 @@ Do this for each file: `index.html`, `projects.html`, `skills.html`, `resume.htm
 
 **contact.html** — update your email, GitHub link, and LinkedIn link
 
+### If you are using a themed template, only edit index.html
+
+Everything is inside that one file. Search for "Your Name", "Your University", and other placeholder text and replace them.
+
 ---
 
-## Part 6 — Add Your Photo
+## Part 7 — Add Your Photo
 
 Your photo will show on the home page. The HTML is already set up — you just need to upload the file.
 
@@ -141,45 +176,7 @@ The Download button on your resume page is already linked to `resume.pdf` — it
 
 ---
 
-## Part 8 — Use a Different Design (Optional)
-
-The default template has 5 separate pages (Home, Projects, Skills, Resume, Contact). The themed templates work differently — each one is a **single page** with everything on it, and the menu scrolls you to different sections instead of going to a new page.
-
-There are 6 designs, one for each field. To see them all, open `templates/index.html` in your browser.
-
-### Step 1 — Pick a template
-
-| File | For |
-|------|-----|
-| `template-cs.html` | Computer Science / Software Engineering |
-| `template-design.html` | Design / UX / Creative Arts |
-| `template-data.html` | Data Science / Machine Learning |
-| `template-bio.html` | Biology / Life Sciences / Pre-Med |
-| `template-business.html` | Business / Finance / Consulting |
-| `template-arch.html` | Architecture / Civil / Urban Design |
-
-Click the file to open it and see what it looks like before you commit to it.
-
-### Step 2 — Replace your index.html with the template
-
-1. In your GitHub repo, click on the template file you want (e.g. `template-cs.html`)
-2. Click the pencil icon to edit
-3. Press **Ctrl+A** (Windows) or **Cmd+A** (Mac) to select everything, then copy
-4. Go back to the root of your repo and open `index.html`
-5. Click the pencil icon, press Ctrl+A / Cmd+A to select all, then paste
-6. Click **Commit changes**
-
-### Step 3 — Edit the placeholder text
-
-The template has placeholder text just like the default — things like "Your Name", "Your University", "company name". Replace these with your real information.
-
-### Note about the other HTML files
-
-When using a themed template, you only need `index.html`. The files `projects.html`, `skills.html`, `resume.html`, and `contact.html` are no longer used — everything is inside `index.html`. You can ignore them or delete them.
-
----
-
-## Part 9 — Change Your Website URL (Optional)
+## Part 8 — Change Your Website URL (Optional)
 
 Right now your URL ends in `/undergrad-eportfolio-tutorial/`. You can shorten this.
 
