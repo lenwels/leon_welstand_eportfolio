@@ -123,8 +123,6 @@
       position: absolute; inset: -2px;
       background: linear-gradient(135deg, rgba(45,106,79,.12) 0%, transparent 60%);
     }
-    .photo-placeholder { font-family: var(--serif); font-size: .8rem; color: var(--muted); font-style: italic; }
-    .photo-icon { font-size: 3rem; opacity: .25; }
 
     /* ── BUTTONS ── */
     .btn {
@@ -266,9 +264,9 @@
 <nav>
   <span class="nav-brand">Leon Welstand</span>
   <ul class="nav-links">
-    <li><a href="#research">Research</a></li>
-    <li><a href="#skills">Skills</a></li>
+    <li><a href="#research">Projects</a></li>
     <li><a href="#experience">Experience</a></li>
+    <li><a href="#skills">Skills</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
 </nav>
@@ -343,6 +341,52 @@
   </div>
 </section>
 
+<!-- EXPERIENCE -->
+<section id="experience" style="background:var(--white);">
+  <div class="container">
+    <p class="eyebrow">Timeline</p>
+    <h2 class="section-title">Experience &amp; Education</h2>
+    <div class="tl-grid">
+      <div>
+        <div class="tl">
+          <div class="tl-entry">
+            <div class="tl-dot"></div>
+            <p class="tl-date">Summer 2025</p>
+            <p class="tl-title">Electrical &amp; Computer Engineering Intern</p>
+            <p class="tl-org">VLI-EV</p>
+            <p class="tl-desc">Worked in a cancer biology lab on signalling pathway crosstalk. Assisted in developing a new immunofluorescence protocol still in use by the lab.</p>
+          </div>
+          <div class="tl-entry">
+            <div class="tl-dot"></div>
+            <p class="tl-date">Jan – May 2025</p>
+            <p class="tl-title">Teaching Assistant — Cell Biology</p>
+            <p class="tl-org">Your University</p>
+            <p class="tl-desc">Ran tutorial sessions and graded lab reports for a class of 60 second-year students.</p>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="tl">
+          <div class="tl-entry">
+            <div class="tl-dot"></div>
+            <p class="tl-date">2024 – 2028</p>
+            <p class="tl-title">B.S. Electrical Engineering, B.A. Physics</p>
+            <p class="tl-org">San Diego State University</p>
+            <p class="tl-desc">GPA: 3.98 / 4.00 · Circuit Analysis, Electronics &amp; Amplifiers, Embedded Systems, Signals &amp; Systems, Classical Electromagnetics, Quantum Computing </p>
+          </div>
+          <div class="tl-entry">
+            <div class="tl-dot"></div>
+            <p class="tl-date">2023 – Present</p>
+            <p class="tl-title">Secretary — Biology Student Society</p>
+            <p class="tl-org">Your University</p>
+            <p class="tl-desc">Organised 8 seminars, 2 lab tours, and a career panel with researchers from industry and academia.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- SKILLS -->
 <section id="skills" style="background:var(--cream);">
   <div class="container">
@@ -362,7 +406,6 @@
       </div>
 
       <div class="skill-card">
-        <div class="skill-card-icon">💻</div>
         <p class="skill-card-title">Computational</p>
         <div class="skill-list-items">
           <div class="skill-list-item">Python (BioPython, Pandas)</div>
@@ -374,7 +417,6 @@
       </div>
 
       <div class="skill-card">
-        <div class="skill-card-icon">📊</div>
         <p class="skill-card-title">Analysis &amp; Tools</p>
         <div class="skill-list-items">
           <div class="skill-list-item">Statistical analysis (R, SPSS)</div>
@@ -386,7 +428,6 @@
       </div>
 
       <div class="skill-card">
-        <div class="skill-card-icon">🌱</div>
         <p class="skill-card-title">Other</p>
         <div class="skill-list-items">
           <div class="skill-list-item">Grant writing (ICMR, DBT)</div>
@@ -400,72 +441,22 @@
   </div>
 </section>
 
-<!-- EXPERIENCE -->
-<section id="experience" style="background:var(--white);">
-  <div class="container">
-    <p class="eyebrow">Timeline</p>
-    <h2 class="section-title">Experience &amp; Education</h2>
-    <div class="tl-grid">
-      <div>
-        <div class="tl">
-          <div class="tl-entry">
-            <div class="tl-dot"></div>
-            <p class="tl-date">Summer 2025</p>
-            <p class="tl-title">Research Intern</p>
-            <p class="tl-org">NCBS Bangalore / TIFR</p>
-            <p class="tl-desc">Worked in a cancer biology lab on signalling pathway crosstalk. Assisted in developing a new immunofluorescence protocol still in use by the lab.</p>
-          </div>
-          <div class="tl-entry">
-            <div class="tl-dot"></div>
-            <p class="tl-date">Jan – May 2025</p>
-            <p class="tl-title">Teaching Assistant — Cell Biology</p>
-            <p class="tl-org">Your University</p>
-            <p class="tl-desc">Ran tutorial sessions and graded lab reports for a class of 60 second-year students.</p>
-          </div>
-        </div>
-      </div>
-      <div>
-        <div class="tl">
-          <div class="tl-entry">
-            <div class="tl-dot"></div>
-            <p class="tl-date">2022 – 2026</p>
-            <p class="tl-title">B.Sc. Biotechnology</p>
-            <p class="tl-org">Your University</p>
-            <p class="tl-desc">CGPA: 9.0 / 10 · Cell Biology, Molecular Biology, Genetics, Bioinformatics, Biochemistry</p>
-          </div>
-          <div class="tl-entry">
-            <div class="tl-dot"></div>
-            <p class="tl-date">2023 – Present</p>
-            <p class="tl-title">Secretary — Biology Student Society</p>
-            <p class="tl-org">Your University</p>
-            <p class="tl-desc">Organised 8 seminars, 2 lab tours, and a career panel with researchers from industry and academia.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
 <!-- CONTACT -->
 <section id="contact" style="padding:4rem 3rem;">
   <div class="container">
     <div class="contact-inner">
       <div class="contact-left">
-        <h3>Contact me:</h3>
-        <p>I'm looking for research placements, PhD programme openings, and science communication opportunities. I also write about biology for a general audience.</p>
+        <h3>Contact me!</h3>
+        <p>I'm always looking for oppertunities.</p>
       </div>
       <div class="contact-links">
-        <a href="mailto:you@example.com" class="c-link">
+        <a href="mailto:lwelstand3685@sdsu.edu" class="c-link">
           <span class="c-link-icon">✉</span>
-          <div><p class="c-link-text">Email</p><p class="c-link-sub">you@university.edu</p></div>
+          <div><p class="c-link-text">Email</p><p class="c-link-sub">lwelstand3685@sdsu.edu</p></div>
         </a>
-        <a href="https://linkedin.com/in/yourname" target="_blank" class="c-link">
+        <a href="https://www.linkedin.com/in/leon-welstand-2256402b0/?skipRedirect=true" target="_blank" class="c-link">
           <span class="c-link-icon">⊞</span>
-          <div><p class="c-link-text">LinkedIn</p><p class="c-link-sub">linkedin.com/in/yourname</p></div>
-        </a>
-        <a href="https://orcid.org/0000-0000-0000-0000" target="_blank" class="c-link">
-          <span class="c-link-icon">◎</span>
-          <div><p class="c-link-text">ORCID</p><p class="c-link-sub">0000-0000-0000-0000</p></div>
+          <div><p class="c-link-text">LinkedIn</p><p class="c-link-sub">linkedin.com/in/leon-welstand</p></div>
         </a>
       </div>
     </div>
