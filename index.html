@@ -123,8 +123,6 @@
       position: absolute; inset: -2px;
       background: linear-gradient(135deg, rgba(45,106,79,.12) 0%, transparent 60%);
     }
-    .photo-placeholder { font-family: var(--serif); font-size: .8rem; color: var(--muted); font-style: italic; }
-    .photo-icon { font-size: 3rem; opacity: .25; }
 
     /* ── BUTTONS ── */
     .btn {
@@ -264,11 +262,11 @@
 <body>
 
 <nav>
-  <span class="nav-brand">Leon Welstand</span>
+  <span class="nav-brand">Leon's e-Resume</span>
   <ul class="nav-links">
-    <li><a href="#research">Research</a></li>
-    <li><a href="#skills">Skills</a></li>
+    <li><a href="#research">Projects</a></li>
     <li><a href="#experience">Experience</a></li>
+    <li><a href="#skills">Skills</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
 </nav>
@@ -280,7 +278,7 @@
   <div class="hero-inner">
     <div>
       <p class="hero-eyebrow">Elecrical Engineering &amp; Physics</p>
-      <h1>Hi, I'm<br/><em>Leon Welstand</em></h1>
+      <h1><br/><em>Leon Welstand</em></h1>
       <p class="hero-bio">
         Third-year Electrical Engineering &amp; Physics student at San Diego State University.
         I am interested in electromagnetic compatability in complex systems, battery science, and acoustics.
@@ -294,9 +292,9 @@
     <div class="hero-photo-wrap">
       <div class="hero-photo-frame">
         <img
-      src="images/profile.jpg"
+      src="images/profile.jpeg"
       alt="Profile photo"
-      class="hero-photo"/>
+      class="hero-photo">
       </div>
     </div>
   </div>
@@ -310,90 +308,38 @@
     <div class="research-grid">
 
       <div class="research-card">
-        <span class="research-type">Lab Research</span>
-        <h3>CRISPR Screen for Drug Resistance Genes</h3>
-        <p>Helped design and run a genome-wide CRISPR knockout screen in MCF-7 breast cancer cells to identify genes that confer resistance to tamoxifen.</p>
+        <span class="research-type">EV Project team</span>
+        <h3>Battery Management System and Real-Time Telemetry</h3>
+        <p>Refactored BMS software for migration to STM32 microcontroller hardware 
+          to implement CAN data aquisition for the first time in team history. 
+          Redesigned CAN bus and sensor wiring harness using electromagnetic compatibility best practices.</p>
         <div class="research-tags">
-          <span class="r-tag">CRISPR-Cas9</span><span class="r-tag">Flow Cytometry</span><span class="r-tag">NGS</span>
+          <span class="r-tag">CAN</span><span class="r-tag">C++ Programming</span><span class="r-tag">Wiring Harness</span>
         </div>
-        <a href="#" class="research-link">Read More →</a>
+        <a href="https://aztecelectricracing.sdsu.edu/" class="research-link">Team Website →</a>
+        <a href="url">link text</a>
       </div>
 
       <div class="research-card">
-        <span class="research-type">Computational Biology</span>
-        <h3>Protein–Protein Docking Pipeline</h3>
-        <p>Built a Python pipeline wrapping AutoDock Vina to screen 200+ small-molecule candidates against a SARS-CoV-2 protease target. Found 3 promising hits.</p>
+        <span class="research-type">Hands-on research</span>
+        <h3>Acoustic Holography, Imaging, and Levitation Lab</h3>
+        <p>Simulated ultrasonic interference with open-source software Ultraino and experimentally validated results against our student-built Schlieren imaging system, resulting in acoustic levitation of macroscopic particles.
+        Developed and tested ultrasonic transducer phased array with FPGA-based PWM control in Verilog.</p>
         <div class="research-tags">
-          <span class="r-tag">Python</span><span class="r-tag">AutoDock</span><span class="r-tag">PyMOL</span>
+          <span class="r-tag">FPGAs</span><span class="r-tag">PWM Control</span><span class="r-tag">Experimental Design</span>
         </div>
-        <a href="#" class="research-link">Read More →</a>
+        <a href="https://students.aip.org/jurpa/schlieren-imaging-of-ultrasound-wave-interference" class="research-link">Read our 2025 publication! →</a>
       </div>
 
       <div class="research-card">
-        <span class="research-type">Field Study</span>
-        <h3>Biodiversity Survey — Western Ghats</h3>
-        <p>Conducted a species survey of amphibians across 8 sites in a protected forest area. Data contributed to a regional conservation report published by the state forest department.</p>
+        <span class="research-type">NSF Sensor Design &amp; Implementation REU</span>
+        <h3>Photo-Acoustics Research Lab</h3>
+        <p>Work in progress!</p>
         <div class="research-tags">
-          <span class="r-tag">Field Methods</span><span class="r-tag">R</span><span class="r-tag">Species Distribution</span>
+          <span class="r-tag">Ultrasound</span><span class="r-tag">ML</span><span class="r-tag">Non-Destructive Testing</span>
         </div>
-        <a href="#" class="research-link">Read More →</a>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- SKILLS -->
-<section id="skills" style="background:var(--cream);">
-  <div class="container">
-    <p class="eyebrow">Capabilities</p>
-    <h2 class="section-title">Skills &amp; Techniques</h2>
-    <div class="skills-layout">
-
-      <div class="skill-card">
-        <p class="skill-card-title">Wet Lab</p>
-        <div class="skill-list-items">
-          <div class="skill-list-item">PCR / qPCR / RT-PCR</div>
-          <div class="skill-list-item">Western Blot &amp; ELISA</div>
-          <div class="skill-list-item">Cell Culture (mammalian)</div>
-          <div class="skill-list-item">Flow Cytometry</div>
-          <div class="skill-list-item">Gel Electrophoresis</div>
-        </div>
-      </div>
-
-      <div class="skill-card">
-        <div class="skill-card-icon">💻</div>
-        <p class="skill-card-title">Computational</p>
-        <div class="skill-list-items">
-          <div class="skill-list-item">Python (BioPython, Pandas)</div>
-          <div class="skill-list-item">R (Bioconductor, ggplot2)</div>
-          <div class="skill-list-item">Sequence Analysis (BLAST, MUSCLE)</div>
-          <div class="skill-list-item">Structural Biology (PyMOL)</div>
-          <div class="skill-list-item">Basic NGS pipelines</div>
-        </div>
-      </div>
-
-      <div class="skill-card">
-        <div class="skill-card-icon">📊</div>
-        <p class="skill-card-title">Analysis &amp; Tools</p>
-        <div class="skill-list-items">
-          <div class="skill-list-item">Statistical analysis (R, SPSS)</div>
-          <div class="skill-list-item">ImageJ / FIJI</div>
-          <div class="skill-list-item">GraphPad Prism</div>
-          <div class="skill-list-item">Literature review (Zotero)</div>
-          <div class="skill-list-item">Scientific writing</div>
-        </div>
-      </div>
-
-      <div class="skill-card">
-        <div class="skill-card-icon">🌱</div>
-        <p class="skill-card-title">Other</p>
-        <div class="skill-list-items">
-          <div class="skill-list-item">Grant writing (ICMR, DBT)</div>
-          <div class="skill-list-item">Lab safety &amp; biosafety</div>
-          <div class="skill-list-item">Science communication</div>
-          <div class="skill-list-item">Microscopy (confocal, fluorescence)</div>
-        </div>
+        <a href="https://docs.google.com/presentation/d/1H_Kdn5qcrBf_ZyGxqQFqU4ia5YSLLQNT/edit?usp=sharing&ouid=117094979737233398433&rtpof=true&sd=true" 
+          class="research-link">Project Overview →</a>
       </div>
 
     </div>
@@ -408,19 +354,36 @@
     <div class="tl-grid">
       <div>
         <div class="tl">
-          <div class="tl-entry">
+           <div class="tl-entry">
             <div class="tl-dot"></div>
-            <p class="tl-date">Summer 2025</p>
-            <p class="tl-title">Research Intern</p>
-            <p class="tl-org">NCBS Bangalore / TIFR</p>
-            <p class="tl-desc">Worked in a cancer biology lab on signalling pathway crosstalk. Assisted in developing a new immunofluorescence protocol still in use by the lab.</p>
+            <p class="tl-date">Sep. 2024 - Present</p>
+            <p class="tl-title">Controls Engineer</p>
+            <p class="tl-org">Aztec Electric Racing</p>
+            <p class="tl-desc"><b>Software team lead '25-'26.</b> Co-led a team of 10 responsible for vehicle embedded systems and data aquisition (DAQ). 
+              Helped manage a $13k annual controls budget to prioritize critical safety and rule-compliant upgrades for Formula SAE EV competition. 
+              Documented and presented software architecture, diagnostic workflows, and high-voltage vehicle test procedures for internal and competition usage.
+          </p>
           </div>
           <div class="tl-entry">
             <div class="tl-dot"></div>
-            <p class="tl-date">Jan – May 2025</p>
-            <p class="tl-title">Teaching Assistant — Cell Biology</p>
-            <p class="tl-org">Your University</p>
-            <p class="tl-desc">Ran tutorial sessions and graded lab reports for a class of 60 second-year students.</p>
+            <p class="tl-date">Summer 2025</p>
+            <p class="tl-title">Electrical &amp; Computer Engineering Intern</p>
+            <p class="tl-org">VLI-EV</p>
+            <p class="tl-desc">Conducted BESS high-voltage testing and troubleshooting on a 115MW solar farm. 
+              Optimized and debugged an embedded BMS program to suit industrial customers. 
+              Used programmable logic controllers (PLC) to integrate Modbus-based safety alerts.
+              Designed an AWS-hosted architecture and Python data analytics user interface to store, analyze, and visualize battery data for up to 25 years of future warranty lifetime.
+          </p>
+          </div>
+          <div class="tl-entry">
+            <div class="tl-dot"></div>
+            <p class="tl-date">Aug 2025 - Present</p>
+            <p class="tl-title">Instructional Student Assitant</p>
+            <p class="tl-org">Math &amp; Science Learning Center, SDSU</p>
+            <p class="tl-desc">Delivered one-on-one drop-in tutoring in mathematics, physics, and computer science for undergraduates.
+            Graded homework assignments for a 70-student section of linear algebra.
+            <b>Awarded "Most Valuable Tutor" for physics for Fall 2025.</b>
+            </p>
           </div>
         </div>
       </div>
@@ -428,20 +391,76 @@
         <div class="tl">
           <div class="tl-entry">
             <div class="tl-dot"></div>
-            <p class="tl-date">2022 – 2026</p>
-            <p class="tl-title">B.Sc. Biotechnology</p>
-            <p class="tl-org">Your University</p>
-            <p class="tl-desc">CGPA: 9.0 / 10 · Cell Biology, Molecular Biology, Genetics, Bioinformatics, Biochemistry</p>
+            <p class="tl-date">2024 – 2028</p>
+            <p class="tl-title">B.S. Electrical Engineering, B.A. Physics</p>
+            <p class="tl-org">San Diego State University</p>
+            <p class="tl-desc">GPA: 3.98 / 4.00 · Circuit Analysis, Electronics &amp; Amplifiers, Embedded Systems, Signals &amp; Systems, Classical Electromagnetics, Quantum Computing </p>
           </div>
           <div class="tl-entry">
             <div class="tl-dot"></div>
-            <p class="tl-date">2023 – Present</p>
-            <p class="tl-title">Secretary — Biology Student Society</p>
-            <p class="tl-org">Your University</p>
-            <p class="tl-desc">Organised 8 seminars, 2 lab tours, and a career panel with researchers from industry and academia.</p>
+            <p class="tl-date">2025 - 2026</p>
+            <p class="tl-title">Public Relations Manager — Society of Physics Students</p>
+            <p class="tl-org">San Diego State Universityy</p>
+            <p class="tl-desc">Designed advetising material through flyers and social media posts. 
+              Organized an integration bee, general body meetings, and lab tours.
+            </p>
           </div>
         </div>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" style="background:var(--cream);">
+  <div class="container">
+    <p class="eyebrow">Capabilities</p>
+    <h2 class="section-title">Skills &amp; Techniques</h2>
+    <div class="skills-layout">
+
+      <div class="skill-card">
+        <p class="skill-card-title">Laboratory</p>
+        <div class="skill-list-items">
+          <div class="skill-list-item">Circuit design, soldering, and breadboards</div>
+          <div class="skill-list-item">Analog &amp; digital oscilloscopes, function generators, and multimeters</div>
+          <div class="skill-list-item">NI LabView software</div>
+          <div class="skill-list-item">Optical systems &amp; alignment: parabolic mirrors, lenses, and knife-edge technique</div>
+          <div class="skill-list-item">Ultrasonic transducers &amp; waveform aquisition</div>
+        </div>
+      </div>
+
+      <div class="skill-card">
+        <p class="skill-card-title">Computational</p>
+        <div class="skill-list-items">
+          <div class="skill-list-item">C and C++</div>
+          <div class="skill-list-item">MATLAB</div>
+          <div class="skill-list-item">Wolfram Mathematica</div>
+          <div class="skill-list-item">Verilog</div>
+          <div class="skill-list-item">Python (Pandas, NumPy, MatPlotLib)</div>
+        </div>
+      </div>
+
+      <div class="skill-card">
+        <p class="skill-card-title">Design &amp; Tools</p>
+        <div class="skill-list-items">
+          <div class="skill-list-item">LT Spice</div>
+          <div class="skill-list-item">PCB: Altium Designer, Kicad, EasyEDA</div>
+          <div class="skill-list-item">GraphPad Prism</div>
+          <div class="skill-list-item">Onshape</div>
+          <div class="skill-list-item">Development boards: STM32, Atmel AVR, Arduino, Tang Nano FPGA</div>
+        </div>
+      </div>
+
+      <div class="skill-card">
+        <p class="skill-card-title">Other</p>
+        <div class="skill-list-items">
+          <div class="skill-list-item">NFPA 70E High Voltage certified</div>
+          <div class="skill-list-item">OSHA-10 &amp; Cal-OSHA certified</div>
+          <div class="skill-list-item">Science communication &amp; grant writing (recipient of $2000 SPS Chapter Research Award)</div>
+          <div class="skill-list-item">Microsoft PowerPoint, Word, Excel</div>
+        </div>
+      </div>
+
     </div>
   </div>
 </section>
@@ -451,21 +470,17 @@
   <div class="container">
     <div class="contact-inner">
       <div class="contact-left">
-        <h3>Contact me:</h3>
-        <p>I'm looking for research placements, PhD programme openings, and science communication opportunities. I also write about biology for a general audience.</p>
+        <h3>Contact me!</h3>
+        <p>I'm always looking for oppertunities.</p>
       </div>
       <div class="contact-links">
-        <a href="mailto:you@example.com" class="c-link">
+        <a href="mailto:lwelstand3685@sdsu.edu" class="c-link">
           <span class="c-link-icon">✉</span>
-          <div><p class="c-link-text">Email</p><p class="c-link-sub">you@university.edu</p></div>
+          <div><p class="c-link-text">Email</p><p class="c-link-sub">lwelstand3685@sdsu.edu</p></div>
         </a>
-        <a href="https://linkedin.com/in/yourname" target="_blank" class="c-link">
+        <a href="www.linkedin.com/in/leon-welstand-2256402b0" target="_blank" class="c-link">
           <span class="c-link-icon">⊞</span>
-          <div><p class="c-link-text">LinkedIn</p><p class="c-link-sub">linkedin.com/in/yourname</p></div>
-        </a>
-        <a href="https://orcid.org/0000-0000-0000-0000" target="_blank" class="c-link">
-          <span class="c-link-icon">◎</span>
-          <div><p class="c-link-text">ORCID</p><p class="c-link-sub">0000-0000-0000-0000</p></div>
+          <div><p class="c-link-text">LinkedIn</p><p class="c-link-sub">linkedin.com/in/leon-welstand</p></div>
         </a>
       </div>
     </div>
